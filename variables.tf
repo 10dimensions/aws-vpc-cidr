@@ -29,3 +29,18 @@ variable "vpc_cidr" {
     error_message = "CIDR size must be at least /20 and no larger than /16"
   }
 }
+
+//
+
+
+variable "aws_availability_zone" {
+  description = "AWS Avialability availability_zone to use"
+  type        = string
+  default     = "us-west-1b"
+}
+
+variable "namespace" {
+  description = "Namespace for resource names"
+  type        = string
+  default     = "default"  # You can adjust the default value as needed
+}
